@@ -61,6 +61,7 @@ form.append(radioBtn);
 radioBtn.setAttribute("type", "radio");
 radioBtn.style.accentColor = "red";
 radioBtn.setAttribute("name", "btn");
+radioBtn.required=true
 let br6 = document.createElement("br");
 form.append(br6);
 let radioBtn2 = document.createElement("input");
@@ -68,6 +69,7 @@ form.append(radioBtn2);
 radioBtn2.style.accentColor = "red";
 radioBtn2.setAttribute("type", "radio");
 radioBtn2.setAttribute("name", "btn");
+
 let br7 = document.createElement("br");
 form.append(br7);
 let submitBtn = document.createElement("button");
@@ -82,24 +84,32 @@ nextBtn.innerHTML = "Next page >";
 nextBtn.disabled = true;
 btn.addEventListener("click", function () {
   submitBtn.disabled = false;
+  submitBtn.addEventListener('click', function(){
+  nextBtn.disabled=false
+})
+nextBtn.addEventListener("click", function () {
+  alert("Finished");
+});
   let interval = setInterval(() => {
     time -= 1;
     p.innerHTML = `00:${time}`;
-    if (time > 10) {
-      p.style.border = "1px solid blue";
+    if(time>10){
+      this.setAttribute("disabled", "true");
     }
     if (time <= 10) {
       p.style.color = "red";
       p.style.border = "1px solid red";
+      this.setAttribute("disabled", "true");
     }
-    if (time === 0) {
+    if (time == 0) { 
+      // btn.disabled=false
       p.innerHTML = "You missed...)";
+      p.style.width="100px"
       clearInterval(interval);
-      submitBtn.disabled=true
-    } 
-     this.setAttribute("disabled", "true");
+      submitBtn.disabled=true;
+      this.removeAttribute('disabled')
+    }  
   }, 500);
 });
-nextBtn.addEventListener("click", function () {
-  alert("Conguratulations");
-});
+
+
