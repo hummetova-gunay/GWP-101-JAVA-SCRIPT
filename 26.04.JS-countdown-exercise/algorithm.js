@@ -20,9 +20,10 @@ console.log( findCount(myString));
 // (i.e., the middle number when the array is sorted).
 
 
-let sortedArr=[]
-let median=0
+
 function findMedian(anyArr) {
+  // let sortedArr=[]
+   let median=0
     anyArr.length%2==0 ? median = (anyArr[anyArr.length/2]+anyArr[(anyArr.length-2)/2] )/2: median=anyArr[(anyArr.length-1)/2]
     return median
 }
