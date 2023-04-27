@@ -9,18 +9,23 @@ submitBtn.disabled = true;
 let radio = document.querySelectorAll("input[name='radio']");
 inputName.addEventListener("focus", function () {
   this.style.backgroundColor = "grey";
-  if (inputName.value) {
-    submitBtn.removeAttribute('disabled')
-  }
+  if(checkbox.checked&&inputName.value&&inputSurname.value){
+    text.style.visibility = "visible";
+    submitBtn.disabled=false;
+}
+else{
+    text.style.visibility = "hidden";
+    submitBtn.disabled=true;
+}
 });
 inputName.addEventListener("mouseout", function () {
   this.style.backgroundColor = "transparent";
 });
 inputSurname.addEventListener("mouseover", function () {
   this.style.backgroundColor = "red";
-  if (inputSurname.value) {
-    submitBtn.removeAttribute('disabled')
-  }
+  // if (inputSurname.value) {
+  //   submitBtn.removeAttribute('disabled')
+  // }
 });
 inputSurname.addEventListener("mouseout", function () {
   this.style.backgroundColor = "white";
@@ -38,7 +43,7 @@ inputPassword.addEventListener("blur", function () {
   inputPassword.value = "";
 });
 checkbox.addEventListener("click", function () {
-    if(checkbox.checked){
+    if(checkbox.checked&&inputName.value&&inputSurname.value){
         text.style.visibility = "visible";
         submitBtn.disabled=false;
     }
@@ -47,16 +52,6 @@ checkbox.addEventListener("click", function () {
         submitBtn.disabled=true;
     }
 });
-// checkbox.addEventListener("blur", function () {
-//   text.style.visibility = 'none';
-//   submitBtn.disabled=true
-// });
-function checked() {
-  if (inputName.value&&inputSurname.value) {
-    submitBtn.removeAttribute('disabled')
-  }
-}
-checked()
 radio.forEach(element=>{
     element.addEventListener('click',function(){
         alert('Finished')
