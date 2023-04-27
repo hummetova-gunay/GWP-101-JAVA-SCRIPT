@@ -1,0 +1,15 @@
+body form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+  border: 1px dashed black;
+  height: 100vh;
+}
+body form div input {
+  accent-color: blue;
+}
+body form #txt {
+  visibility: hidden;
+}/*# sourceMappingURL=style.css.map */

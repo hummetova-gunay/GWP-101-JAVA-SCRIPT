@@ -1,0 +1,19 @@
+body{
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 10px;
+        border: 1px dashed black;
+        height: 100vh;
+        div{
+            input{
+                accent-color: blue;
+            }
+        }
+       #txt {
+            visibility: hidden;
+        }
+    }
+}
