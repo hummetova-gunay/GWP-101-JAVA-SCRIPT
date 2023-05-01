@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+    section{
+        display: flex;
+        flex-direction: column;
+        margin: 0 150px;
+    }
+    table{
+        width: 100%;
+        margin: 2px auto;
+        border-collapse: collapse;
+    }
+    table td, table th{
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+     .icon-id-up , .icon-name-down, .icon-name-up {
+        display: none;
+    } 
+    #searchInput{
+        padding: 8px;
+    }
+   </style>
+</head>
+<body>
+    <section>
+        <input type="text" placeholder="Search..." id="searchInput">
+        <table>
+            <thead>
+              <th id="tableId"> ID <i class="fa-solid fa-arrow-down icon-id-down" ></i><i class="fa-sharp fa-solid fa-arrow-up icon-id-up"></i></th>
+              <th id="tableName"> Name  <i class="fa-solid fa-arrow-down icon-name-down" ></i><i class="fa-sharp fa-solid fa-arrow-up icon-name-up"></i></th>
+              <th>Email</th>
+              <th>Gender</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+    </section>
+</body>
+<script src="./table.js"></script>
+</html>
