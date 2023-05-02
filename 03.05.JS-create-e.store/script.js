@@ -25,9 +25,11 @@ allFavbtns.forEach(element=>{
         let favBook=books.find(el=>el.id===+element.id)   
         if(favourites.some(item=>item.id===favBook.id)){
             alert('you have already added this card to wishlist')
-        };
-        favourites.push(favBook);
-        localStorage.setItem('favouriteBooks', JSON.stringify(favourites))
+        }else{
+          favourites.push(favBook);
+          localStorage.setItem('favouriteBooks', JSON.stringify(favourites))
+        }
+
     })
 })
 
