@@ -1,10 +1,12 @@
 let countryName=document.querySelector('#countryName')
 let capitalName=document.querySelector('#capitalName')
 let submitBtn=document.querySelector('.btn')
+// submitBtn.setAttribute('disabled','true')
 let form=document.querySelector('form')
 form.addEventListener('submit',function(e){
     e.preventDefault()
     if(countryName.value&&capitalName.value){
+      // submitBtn.removeAttribute('disabled')
         const addCountry = async (obj) => {
             await fetch(`http://localhost:3000/cards`, {
               method: "POST",

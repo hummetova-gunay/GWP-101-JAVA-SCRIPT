@@ -2,7 +2,6 @@ let baseUrl="http://localhost:3000/cards"
 
 let allCards=document.querySelector('#cards')
 let addUser=document.querySelector('.btn')
-
 async function fillBoxes() {
   const response = await fetch(baseUrl);
   const data = await response.json();
