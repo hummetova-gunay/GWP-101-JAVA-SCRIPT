@@ -1,0 +1,39 @@
+{
+  "cards": [
+    {
+      "name": "Azerbaijan",
+      "capital": "Baki",
+      "id": 3
+    },
+    {
+      "name": "Russia",
+      "capital": "Moskow",
+      "id": 4
+    },
+    {
+      "name": "Turkiye",
+      "capital": "Ankara",
+      "id": 6
+    },
+    {
+      "name": "portugal",
+      "capital": "Lissabon",
+      "id": 1683630371940
+    },
+    {
+      "name": "Cananda ",
+      "capital": "Ottava",
+      "id": 1683630439536
+    },
+    {
+      "name": "Iraq",
+      "capital": "Baghdad",
+      "id": 1683630870097
+    },
+    {
+      "name": "Afganistan",
+      "capital": "Kabul",
+      "id": 1683632076841
+    }
+  ]
+}

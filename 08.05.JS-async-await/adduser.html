@@ -10,33 +10,42 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <style>
+      .container{
+        height: 100vh;
+      }
+      input{
+        width: 300px  !important;
+      }
+    </style>
+    <title>Add Card</title>
   </head>
   <body>
+
+    
+    <div class="container d-flex justify-content-center align-items-center flex-column">
+      <h1 class="mb-5">Add Card</h1>
     <form>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <label for="countryName" class="form-label">Country Name</label>
         <input
-          type="email"
+          type="text"
           class="form-control"
-          id="exampleInputEmail1"
-
+          id="countryName"
         />
-
+        
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <label for="capitalName" class="form-label">Capital</label>
         <input
-          type="password"
+          type="text"
           class="form-control"
-          id="exampleInputPassword1"
+          id="capitalName"
         />
       </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Add</button>
     </form>
+  </div>
+  <script src="./adduser.js"></script>
   </body>
 </html>

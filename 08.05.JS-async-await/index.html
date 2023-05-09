@@ -16,7 +16,6 @@
       }
       #card {
         background-color: rgb(108, 158, 170);
-        /* width: 500px; */
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -29,6 +28,16 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px;
+      }
+      .fa-pen{
+        color: rgb(29, 77, 29);
+      }
+      .fa-trash{
+        color: rgb(109, 13, 13);
+      }
+      a{
+        text-decoration: none;
+        color: white;
       }
     </style>
     <link
@@ -45,7 +54,7 @@
       <div class="container">
         <div class="row">
           <h1 class="text-center">CRUD in Mock JSON</h1>
-          <button type="button" class="btn btn-dark mt-5 mx-5">Add User</button>
+          <button type="button" class="btn btn-dark mt-5 mx-5">Add user</button>
           <div id="cards" class="m-4 d-flex flex-wrap gap-4">
           </div>
         </div>
