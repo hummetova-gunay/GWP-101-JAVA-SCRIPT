@@ -1,0 +1,54 @@
+.container {
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.search-icon {
+  width: 300px;
+  position: absolute;
+  /* padding: ; */
+}
+input {
+  outline: none;
+  /* position: absolute; */
+  width: 100%;
+  margin: 10px;
+}
+.fa-magnifying-glass {
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+.fa-bars{
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .header{
+    display: none;
+  }
+  .show{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .search-icon {
+    display: none;
+  }
+  .icons {
+    display: none;
+  }
+  .fa-bars{
+    display: block;
+  }
+}
