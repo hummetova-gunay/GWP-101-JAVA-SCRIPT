@@ -1,0 +1,100 @@
+* {
+  text-decoration: none !important;
+  list-style-type: none;
+}
+header {
+  background-color: bisque;
+  nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .fa-bars{
+        display: none;
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-top: 5px;
+      li {
+        margin-right: 10px;
+        padding: 5px;
+        border: 1px solid transparent;
+        &:hover {
+          border-color: black;
+        }
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:767px) {
+    header{
+        nav{
+            ul{
+                display: none;
+            }
+            .fa-bars{
+                display: block;
+            }
+        }
+    }
+  }
+
+#first {
+  height: 100vh;
+  background-image: url(./imag/WhatsApp\ Image\ 2023-05-15\ at\ 01.16.53.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#second{
+    h1{
+        border-bottom: 1px solid red;
+        
+    }
+    table{
+        tbody{
+            tr{
+                td{
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .cards{
+        display: none;
+        #card{
+            
+        }
+    }
+}
+
+@media screen and (max-width:767px){
+    #second{
+        table{
+            display: none;
+        }
+        .cards{
+            display: block;
+        }
+    }
+}
+@media screen and (max-width:567px){
+    #first {
+        height: 100vh;
+        background-image: url(imag/second-background.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+}
+
+
+
