@@ -1,0 +1,21 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid grey;
+  padding: 5px 20px;
+}
+.seacrh-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-group {
+  width: 400px;
+}
+.form-select {
+  width: 200px;
+}
+.spinner-border{
+    display: none;
+}
