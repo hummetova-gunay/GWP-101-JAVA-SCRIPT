@@ -1,0 +1,25 @@
+{
+  "hosting": [
+    {
+      "id": 2,
+      "image": "ss-icon-1.png",
+      "name": "Professional Website Hosting",
+      "text": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.",
+      "price": null
+    },
+    {
+      "id": 3,
+      "image": "st-blog-3.jpg",
+      "name": " Website Hosting",
+      "text": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.",
+      "price": 30
+    },
+    {
+      "image": "ss-icon-4.png",
+      "name": "Professional Website Hosting",
+      "text": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.",
+      "price": null,
+      "id": 4
+    }
+  ]
+}
