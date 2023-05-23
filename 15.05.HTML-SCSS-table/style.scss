@@ -4,13 +4,16 @@
 }
 header {
   background-color: bisque;
-  nav {
+  #firstnav {
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     .fa-bars{
         display: none;
+    }
+    .new-nav{
+      display: none;
     }
     ul {
       display: flex;
@@ -23,6 +26,7 @@ header {
         border: 1px solid transparent;
         &:hover {
           border-color: black;
+          border-radius: 8px;
         }
         a {
           color: black;
@@ -31,10 +35,9 @@ header {
     }
   }
 }
-
 @media screen and (max-width:767px) {
     header{
-        nav{
+      #firstnav{
             ul{
                 display: none;
             }
@@ -71,8 +74,40 @@ header {
     }
     .cards{
         display: none;
+        width: 100%;
         #card{
-            
+          width: 100%;
+            padding: 10px;
+            // gap: 40px;
+            margin-bottom: 20px;
+            border: 1px solid grey;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            .card-date{
+              .date{
+                  color: green;
+              }
+            }
+            .img-name-buttons{
+              display: flex;
+              position: relative;
+              img{
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+              }
+              .name-surname{
+                display: flex;
+                flex-direction: column;
+              }
+              .buttons{
+                position: absolute;
+                right: 10px;
+                bottom: 0;
+              }
+            }
+
         }
     }
 }
@@ -83,7 +118,7 @@ header {
             display: none;
         }
         .cards{
-            display: block;
+           display: block;
         }
     }
 }
@@ -93,6 +128,20 @@ header {
         background-image: url(imag/second-background.jpeg);
         background-repeat: no-repeat;
         background-position: center;
+      }
+      .cards{
+        #card{
+          .card-date{
+            padding-left: 40px;
+          }
+          .img-name-buttons{
+            padding: 40px;
+            padding-top: 20px;
+            .buttons{
+              left: 80px;
+            }
+          }
+        }
       }
 }
 

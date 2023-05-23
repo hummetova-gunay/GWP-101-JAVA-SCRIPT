@@ -28,6 +28,7 @@ header nav ul li {
 }
 header nav ul li:hover {
   border-color: black;
+  border-radius: 8px;
 }
 header nav ul li a {
   color: black;
@@ -58,7 +59,39 @@ header nav ul li a {
 }
 #second .cards {
   display: none;
+  width: 100%;
 }
+#second .cards #card {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#second .cards #card .card-date .date {
+  color: green;
+}
+#second .cards #card .img-name-buttons {
+  display: flex;
+  position: relative;
+}
+#second .cards #card .img-name-buttons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+#second .cards #card .img-name-buttons .name-surname {
+  display: flex;
+  flex-direction: column;
+}
+#second .cards #card .img-name-buttons .buttons {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+
 @media screen and (max-width: 767px) {
   #second table {
     display: none;
@@ -73,5 +106,15 @@ header nav ul li a {
     background-image: url(imag/second-background.jpeg);
     background-repeat: no-repeat;
     background-position: center;
+  }
+  .cards #card .card-date {
+    padding-left: 40px;
+  }
+  .cards #card .img-name-buttons {
+    padding: 40px;
+    padding-top: 20px;
+  }
+  .cards #card .img-name-buttons .buttons {
+    left: 80px;
   }
 }/*# sourceMappingURL=style.css.map */
