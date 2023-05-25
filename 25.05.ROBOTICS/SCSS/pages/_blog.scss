@@ -1,0 +1,35 @@
+#blog{
+    padding:100px;
+    .container{
+        .heading-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center ;
+            align-items: center;
+            color:black
+        }
+        .people{
+            border-radius:15px;
+            display: flex;
+            gap: 20px;
+           .person{
+            img{
+                margin-bottom: 10px;
+            }
+            .text{
+                .buttons{
+                    button{
+                        border: none;
+                        background-image: linear-gradient(blue, pink);
+                        color:white;
+                        &:hover{
+                           background-image: none;
+                           color:black
+                        }
+                    }
+                }
+            }
+           } 
+        }
+    }
+}

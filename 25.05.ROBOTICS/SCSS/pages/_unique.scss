@@ -1,0 +1,35 @@
+#unique{
+    // background-image: url(./images/feature-bg.jpg);
+    background-image: url(../../images/feature-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    .container{
+        display: flex;
+        flex-direction: column;
+        .heading-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center ;
+            align-items: center;
+            color:white
+        }
+        .features{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 20px;
+            .single-feature{
+                padding: 20px;
+                border-radius: 15px;
+                background-color: white;
+                .service{
+                    display: flex;
+                }
+                &:hover .service{
+                    color:#8A90FF;
+                }
+            }
+        }
+    }
+}
